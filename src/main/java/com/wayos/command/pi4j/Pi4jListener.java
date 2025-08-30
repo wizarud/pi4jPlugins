@@ -15,7 +15,7 @@ public class Pi4jListener extends ExtensionSupportWakeupCommandNode.WebListener 
 	@Override
 	public void wakup(Session session) {
 		
-		session.commandList().add(new pi4jDigitalOutputCommandNode(session, new String[]{"pi4jOutput"}));
+		session.commandList().add(new pi4jDigitalOutputCommandNode(session, new String[]{"pi4jOutputCMD"}));
 		
 		System.out.println(session + " pi4j Commands ready..");
 		
@@ -40,7 +40,7 @@ public class Pi4jListener extends ExtensionSupportWakeupCommandNode.WebListener 
 		sampleEntity1Map.put("entity-resps", "["
 				+ "{"
 				+ "	txt: 'CMD',"
-				+ "	params: [{ parameterName: 'hook', value: 'pi4jOutput' }, { parameterName: 'params', value: 'pinNo hi|lo' }]"
+				+ "	params: [{ parameterName: 'hook', value: 'pi4jOutputCMD' }, { parameterName: 'params', value: 'pinNo hi|lo' }]"
 				+ "}"
 				+ "]");
 		
@@ -48,7 +48,7 @@ public class Pi4jListener extends ExtensionSupportWakeupCommandNode.WebListener 
 		 * DOM Id query pattern to apply colour
 		 * extCommand-<Hook>
 		 */
-		logicDesignerExtToolMap.put("extCommand-pi4jOutput", sampleEntity1Map);
+		logicDesignerExtToolMap.put("extCommand-pi4jOutputCMD", sampleEntity1Map);
 		
 		System.out.println("Loaded Sample Tools: " + sce.getServletContext().getAttribute("logicDesignerExtToolMap"));		
 		
