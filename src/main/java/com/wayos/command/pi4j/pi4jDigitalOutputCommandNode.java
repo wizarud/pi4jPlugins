@@ -59,6 +59,8 @@ public class pi4jDigitalOutputCommandNode extends CommandNode {
     		
         } else if (action.equals("lo")) {
         	
+            output.low();
+            
     		return action;
             
         }

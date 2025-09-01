@@ -40,17 +40,24 @@
 			<artifactId>runtime</artifactId>
 			<version>2025.8.8</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.pi4j</groupId>
 			<artifactId>pi4j-core</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.pi4j</groupId>
 			<artifactId>pi4j-plugin-mock</artifactId>
 			<version>3.0.2</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.pi4j</groupId>
+			<artifactId>pi4j-plugin-pigpio</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
 	</dependencies>
 </project>
