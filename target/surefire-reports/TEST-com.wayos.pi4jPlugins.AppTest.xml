@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.wayos.pi4jPlugins.AppTest" time="0.031" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.wayos.pi4jPlugins.AppTest" time="0.032" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TH"/>
     <property name="sun.boot.library.path" value="/Users/overrider/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.7.v20250502-0916/jre/lib"/>
-    <property name="sun.java.command" value="/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire/surefirebooter-20250902122732893_3.jar /Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire 2568-09-02T12-27-32_785-jvmRun1 surefire-20250902122732893_1tmp surefire_0-20250902122732893_2tmp"/>
+    <property name="sun.java.command" value="/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire/surefirebooter-20250902131056473_3.jar /Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire 2568-09-02T13-10-56_357-jvmRun1 surefire-20250902131056473_1tmp surefire_0-20250902131056473_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/test-classes:/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/classes:/Users/overrider/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/overrider/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/overrider/.m2/repository/com/wayos/runtime/2025.9.2.1/runtime-2025.9.2.1.jar:/Users/overrider/.m2/repository/org/apache/commons/commons-text/1.13.1/commons-text-1.13.1.jar:/Users/overrider/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/Users/overrider/.m2/repository/commons-io/commons-io/2.19.0/commons-io-2.19.0.jar:/Users/overrider/.m2/repository/commons-fileupload/commons-fileupload/1.6.0/commons-fileupload-1.6.0.jar:/Users/overrider/.m2/repository/org/jsoup/jsoup/1.21.1/jsoup-1.21.1.jar:/Users/overrider/.m2/repository/com/restfb/restfb/2023.6.0/restfb-2023.6.0.jar:/Users/overrider/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/overrider/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/overrider/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/overrider/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/overrider/.m2/repository/com/cronutils/cron-utils/9.2.1/cron-utils-9.2.1.jar:/Users/overrider/.m2/repository/com/pi4j/pi4j-core/3.0.2/pi4j-core-3.0.2.jar:/Users/overrider/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/overrider/.m2/repository/com/pi4j/pi4j-plugin-mock/3.0.2/pi4j-plugin-mock-3.0.2.jar:/Users/overrider/.m2/repository/com/pi4j/pi4j-plugin-pigpio/3.0.2/pi4j-plugin-pigpio-3.0.2.jar:/Users/overrider/.m2/repository/com/pi4j/pi4j-library-pigpio/3.0.2/pi4j-library-pigpio-3.0.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire/surefirebooter-20250902122732893_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/overrider/Documents/wayOSProjects/pi4jPlugins/target/surefire/surefirebooter-20250902131056473_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
