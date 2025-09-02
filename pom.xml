@@ -5,7 +5,7 @@
 
 	<groupId>com.wayos.command.pi4j</groupId>
 	<artifactId>pi4jPlugins</artifactId>
-	<version>2025.9.2.1</version>
+	<version>2025.9.2.2</version>
 	<packaging>jar</packaging>
 
 	<name>pi4jPlugins</name>
@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>17</java.version>
+		<java.version>21</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>	
