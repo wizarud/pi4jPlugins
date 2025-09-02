@@ -36,7 +36,7 @@ public class Pi4jListener extends ExtensionSupportWakeupCommandNode.WebListener 
 				(Map<String, Map<String, String>>)sce.getServletContext().getAttribute("logicDesignerExtToolMap");		
 		
 		Map<String, String> sampleEntity1Map = new HashMap<>();
-		sampleEntity1Map.put("tool-label", "Pi Out");
+		sampleEntity1Map.put("tool-label", "Digit");
 		sampleEntity1Map.put("tool-color", "#D3D70D");
 		sampleEntity1Map.put("tool-tip", "Pi4J Entity!");
 		sampleEntity1Map.put("entity-resps", "["
