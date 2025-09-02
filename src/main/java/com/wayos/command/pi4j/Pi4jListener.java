@@ -47,7 +47,7 @@ public class Pi4jListener extends ExtensionSupportWakeupCommandNode.WebListener 
 				+ "]");
 		
 		Map<String, String> sampleEntity2Map = new HashMap<>();
-		sampleEntity2Map.put("tool-label", "Pi Freq");
+		sampleEntity2Map.put("tool-label", "Piezo");
 		sampleEntity2Map.put("tool-color", "#8FA31E");
 		sampleEntity2Map.put("tool-tip", "Pi4J Pwm Freq for Piezo Buzzo Entity!");
 		sampleEntity2Map.put("entity-resps", "["
