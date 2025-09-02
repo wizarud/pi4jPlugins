@@ -5,7 +5,7 @@
 
 	<groupId>com.wayos.command.pi4j</groupId>
 	<artifactId>pi4jPlugins</artifactId>
-	<version>2025.9.2.2</version>
+	<version>2025.9.2.7</version>
 	<packaging>jar</packaging>
 
 	<name>pi4jPlugins</name>
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>com.wayos</groupId>
 			<artifactId>runtime</artifactId>
-			<version>2025.9.2.1</version>
+			<version>2025.9.2.7</version>
 		</dependency>
 
 		<dependency>
