@@ -38,32 +38,39 @@ public class pi4jDigitalOutputCommandNode extends CommandNode {
 		
 		String action = tokens[1];
 		
-		String id = "pi4jId:" + pin;
+		//String id = "pi4jId:" + pin;
 		
-		String name = id;
+		//String name = id;
 		
         Context pi4j = Pi4J.newAutoContext();
         
-        DigitalOutput output = pi4j.create(DigitalOutput.newConfigBuilder(pi4j)
-                .id(id)
-                .name(name)
-                .address(pin) // mock pin address
-//                .provider("mock-digital-output") // IMPORTANT for mock mode
-                .build());
-        
-        if (action.equals("hi")) {
+        try {
         	
-            output.high();
-            
-    		return action;
-    		
-        } else if (action.equals("lo")) {
+            DigitalOutput output = pi4j.create(DigitalOutput.newConfigBuilder(pi4j)
+                    //        .id(id)
+                    //        .name(name)
+                            .address(pin)
+                            .build());
         	
-            output.low();
+            if (action.equals("hi")) {
+            	
+                output.high();
+                
+        		return action;
+        		
+            } else if (action.equals("lo")) {
+            	
+                output.low();
+                
+        		return action;
+                
+            }
             
-    		return action;
-            
+        } catch (Exception e) {
+        	
+        	return e.getMessage();
         }
+        
 		
 		return "Unknown action! Use hi|lo";
 	}

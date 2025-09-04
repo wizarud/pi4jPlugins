@@ -40,38 +40,47 @@ public class pi4jPwmFreqOutputCommandNode extends CommandNode {
 			return e.getMessage() + ": Invalid pi4j Parameters! Use <pin> <freq> <percent>";
 		}
 		
-		String id = "pi4jId:" + pin;
+		//String id = "pi4jId:" + pin;
 		
-		String name = "Piezo Buzzer:" + pin;
+		//String name = "Piezo Buzzer:" + pin;
 		
         Context pi4j = Pi4J.newAutoContext();
         
-        PwmConfig pwmConfig = Pwm.newConfigBuilder(pi4j)
-                .id(id)
-                .name(name)
-                .address(pin) // GPIO number, not physical pin
-                .frequency(freq) // Hz (note)
-                .dutyCycle(percent)  // duty cycle
-                .build();
-
-        Pwm pwm = pi4j.create(pwmConfig);
-
-        if (percent>0) {
+        try {
         	
-            // Start tone
-            pwm.on();
+            PwmConfig pwmConfig = Pwm.newConfigBuilder(pi4j)
+            //        .id(id)
+            //        .name(name)
+                    .address(pin) // GPIO number, not physical pin
+                    .frequency(freq) // Hz (note)
+                    .dutyCycle(percent)  // duty cycle
+                    .build();
+
+            Pwm pwm = pi4j.create(pwmConfig);
+
+            if (percent>0) {
+            	
+                // Start tone
+                pwm.on();
+                
+        		return pin + " " + freq + " " + percent;
+        		
+            }
             
-    		return name + " " + freq + " " + percent;
+            // Stop
+            pwm.off();
+
+            // Shutdown Pi4J
+            pi4j.shutdown();
+            
+    		return pin + " " + freq + " stoped";
     		
+        } catch (Exception e) {
+        	
+        	return e.getMessage();
         }
         
-        // Stop
-        pwm.off();
 
-        // Shutdown Pi4J
-        pi4j.shutdown();
-        
-		return name + " " + freq + " stoped";
 	}
 
 }
