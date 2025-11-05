@@ -37,7 +37,7 @@ public class pi4jDigitalInputListenerCommandNode extends CommandNode {
 			
     	    System.out.println("Input changed from: " + pin + " -> " + event.state());
     	    
-			String responseText = API.call(Configuration.domain, contextName, sessionId, message);
+			String responseText = API.call(Configuration.api_domain, contextName, sessionId, message);
 			
 			System.out.println("Response: " + responseText);
 						
@@ -104,7 +104,7 @@ public class pi4jDigitalInputListenerCommandNode extends CommandNode {
         	/**
         	 * Override listener for new context, sessionId or message for this pin
         	 */
-        	singleDigitalStateChangeListener = new SingleDigitalStateChangeListener(pin, Configuration.domain, contextName, sessionId, message);
+        	singleDigitalStateChangeListener = new SingleDigitalStateChangeListener(pin, Configuration.api_domain, contextName, sessionId, message);
 
         	input.addListener(singleDigitalStateChangeListener);
         	
